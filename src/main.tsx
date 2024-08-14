@@ -156,7 +156,7 @@ const Lap = (props: { index: number; lap: number; onDelete: () => {} }) => (
 //I don't think this was part of the exercise but ReactDOM.Render is now deprecated in react's latest version, we should use createRoot's render function instead
 // see https://react.dev/blog/2022/03/08/react-18-upgrade-guide#updates-to-client-rendering-apis
 ReactDOM.render(
-  <Stopwatch initialSeconds={1000000000} />,
+  <Stopwatch initialSeconds={0} />,
   // usually the id is root not content, however, this might be by design
   document.getElementById("root")
 );
